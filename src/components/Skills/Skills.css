@@ -1,0 +1,45 @@
+.skills{
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skillsHeader{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.skillList{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    max-width: 650px;
+}
+.skillCard{
+    background-color: rgba(50, 50, 50, 0.6);
+    padding: 1.3rem;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 5.5rem;
+    gap:1.5rem;
+    transition: background-color 0.4s ease, transform 0.4s ease;
+}
+.skillCard:hover{
+    background-color: rgba(50, 50, 50, 0.8);
+    transform: scale(1.04);
+    border: rgba(50, 50, 50, 0.2);
+}
+.skillCard .svgIcon{
+    cursor: pointer;
+}
+.skillCard img{
+    height: 2rem;
+}
+.skillCard p{
+    margin: 0;
+}

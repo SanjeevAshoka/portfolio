@@ -1,0 +1,79 @@
+.resumeSection {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.resumeText {
+    flex: 1;
+}
+
+.resumeText p {
+    margin: 0;
+}
+
+.resumeTextOne {
+    word-spacing: 0.2rem;
+    position: relative;
+}
+
+.resumeTextTwo {
+    word-spacing: 0.2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    position: relative;
+}
+
+.animate::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+    z-index: -1;
+    border-radius: 1rem;
+    transition: width 2s ease;
+    animation: animateBack 2s forwards;
+}
+
+@keyframes animateBack {
+    from {
+        width: 0%;
+        /* border:1px solid rgba(246, 226, 7, 0.3); */
+        border-right: 0;
+    }
+
+    to {
+        width: 100%;
+        /* border: 1px solid rgba(246, 226, 7, 0.8); */
+    }
+}
+
+@media (max-width: 620px) {
+    .resumeTextTwo {
+        font-size: 1rem;
+    }
+
+    .resumeTextOne {
+        font-size: 0.8rem;
+    }
+}
+
+.resumeImageHolder {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-end;
+}
+
+.resumeImage {
+    width: 90%;
+    border-radius: 0.5rem;
+}
+
+.downloadBtn {
+    width: 90%;
+}

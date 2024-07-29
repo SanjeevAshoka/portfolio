@@ -1,0 +1,182 @@
+.contact{
+    margin-top: 6rem;
+    border: 1px solid rgba(246, 226, 7, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+.contactHeader{
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    translate: 0 1rem;
+    bottom: 100%;
+    background: #222222;
+    padding-inline: 5rem;
+}
+
+.contactCards{
+    margin-top: 2rem;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 0rem;
+    padding-top:0;
+    border-radius: 0.8rem;
+}
+.contactExpLocation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.contactLocIcon{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all ease 0.3s;
+    color:rgba(246, 226, 7, 0.9);
+}
+.contactName{
+    text-decoration: none;
+    border:none;
+    color: rgba(246, 226, 7, 0.4);
+    font-weight: 600;
+    cursor: pointer;
+}
+.contactExpLocation:hover .contactName{
+    color: rgba(246, 226, 7, 0.8);
+}
+.contactExpLocation:hover .contactLocIcon {
+    box-shadow: 0 0 0.625em white;
+    color: white;
+}
+.belowContact{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.contactListIcons{
+    background-color: #222222;
+    position: absolute;
+    display: flex;
+    gap:2rem;
+    top:100%;
+    translate: 0 -1rem;
+    padding-inline: 0.25rem;
+}
+.thanks{
+    margin-top: 4rem;
+    border: 1px solid rgba(246, 226, 7, 0.8);
+    position: relative;
+}
+.thanksMsg{
+    position: absolute;
+    bottom:100%;
+    left:50%;
+    translate: -50% 0.7rem;
+    background-color: #222222;
+    padding-inline: 1rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: rgba(246, 226, 7, 0.8);
+}
+ a{
+ text-decoration: none;
+ border:none;
+}
+.ongoingDev{
+    margin-top: 3rem;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.ongoingContainer{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.headerOngoing{
+        padding: 0.6rem 1rem;
+        color: rgb(246, 226, 7);
+        font-weight: bold;
+        background-color: #222222;
+        border: 2px solid rgb(246, 226, 7);
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        box-shadow: 0px 4px 8px 0px rgba(246, 226, 7, 0.2), 0px -4px 8px 0px rgba(246, 226, 7, 0.4);
+        border-color: #222222;
+        /* display: flex; */
+}
+.ongoingFeatures{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    justify-content: center;
+    animation: scroll-left 12s linear infinite;
+}
+@keyframes scroll-left {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+.featureName{
+    background:rgba(246, 226, 7, 0.2);
+    padding: 0.1rem 0.5rem;
+    border: 1px solid rgba(246, 226, 7, 0.8);
+    border-radius: 0.4rem;
+
+    font-size: 0.8;
+    font-weight: bold;
+}
+
+@media (max-width: 500px) {
+    .contactHeader{
+    font-size: 1.5rem;
+    padding-inline: 2.5rem;
+    }
+    .contactExpLocation{
+        padding: 0.3rem 0.4rem;
+        gap: 0.7rem;
+    }
+    .contactName{
+        font-size: 0.8rem;
+    }
+    .belowContact{
+        flex-direction: column;
+    }
+}
+@media (max-width: 460px) {
+    .thanksMsg{
+        padding-inline: 0.4rem;
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media (max-width: 430px) {
+    .featureName{
+        font-size: 0.6rem;
+        font-weight: 500;
+    }
+    .headerOngoing{
+        font-size: 0.7rem;
+        padding: 0.3rem 0.8rem;
+    }
+}
+

@@ -1,0 +1,153 @@
+.portfolio {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.portfolioList {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.portfolioCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 0.25rem;
+    border: 1px solid rgba(246, 226, 7, 0.3);
+    border-radius: 0.8rem;
+}
+
+.portfolioImg {
+    width: 16rem;
+    border-radius: 0.8rem;
+}
+
+.portfolioDesc {
+    width: 80%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 50%;
+    translate: 0 -50%;
+    border-radius: 0.8rem;
+    padding: 3rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    opacity: 0;
+    transition: opacity 0.7s ease, transform 0.4s ease;
+    z-index: -1;
+}
+
+.portfolioCard:hover .portfolioDesc {
+    opacity: 1;
+    animation: slideInDesc 0.4s forwards;
+}
+
+@keyframes slideInDesc {
+    from {
+        transform: translate(0%, 100%);
+        opacity: 0;
+    }
+
+    to {
+        top: 50%;
+        opacity: 1;
+        transform: translate(0%, 0%);
+        z-index: 2;
+    }
+}
+
+.portfolioDesc p {
+    margin: 0;
+}
+
+.descTitle {
+    font-weight: bold;
+}
+
+.descCard {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.browseSection {
+    display: flex;
+    justify-content: space-around;
+}
+
+.browseButton {
+    padding: 0.4rem 0.5rem;
+    color: rgb(246, 226, 7);
+    font-weight: bold;
+    background-color: #222222;
+    border: 1px solid rgb(246, 226, 7);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    box-shadow: 0px 1px 2px 0px rgba(246, 226, 7, 0.2), 0px -1px 2px 0px rgba(246, 226, 7, 0.4);
+    transition: box-shadow 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.browseButton .icon {
+    width: 35px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #222222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all ease 0.3s;
+    color: rgba(246, 226, 7, 0.9);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    opacity: 0;
+    transition: opacity 0.7s ease, transform 0.4s ease;
+}
+
+.browseButton .icon:hover {
+    box-shadow: 0 0 0.725em #222222;
+    color: white;
+}
+
+.browseButton:hover .icon {
+    opacity: 1;
+    animation: slideIn 0.4s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        left: -100%;
+        opacity: 0;
+    }
+
+    to {
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+    }
+}
+
+.browseButton .btnText {
+    transition: transform 0.3s ease, opacity 0.7s ease;
+}
+
+.browseButton:hover .btnText {
+    opacity: 0;
+    transform: translateX(100px);
+}

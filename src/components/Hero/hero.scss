@@ -1,0 +1,126 @@
+.hero {
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+ .imageholder{
+    position: absolute;
+    max-width: 1280px;
+    overflow: hidden;
+    z-index: -1;
+    right: 50%;
+    translate: 60% 0%;
+  }
+  .imageholder >img {
+    filter: blur(1px);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%; 
+    mix-blend-mode: darken;
+  }
+  @media (max-width: 850px) {
+    .imageholder{
+      right: 12rem;
+    }
+    .imageholder >img {
+      border-top-left-radius: 20px;
+      border-top-right-radius: 10px; 
+      border-bottom-right-radius: 30px; 
+      border-bottom-left-radius: 5px; 
+    }
+  }
+  .hero__left{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    word-spacing: 0.25rem;
+    gap: 2rem;
+  }
+  .namespan{
+    font-size: 1.5rem;
+    color: rgb(246, 226, 7);
+
+  }
+  .btnholder{
+    display: flex;
+    justify-content: center;
+
+  }
+  .contactbtn{
+    padding: 0.8rem 1rem;
+    color: rgb(246, 226, 7);
+    font-weight: bold;
+    background-color: #222222;
+    border: 2px solid rgb(246, 226, 7);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    box-shadow: 0px 1px 2px 0px rgba(246, 226, 7, 0.2), 0px -1px 2px 0px rgba(246, 226, 7, 0.4);
+    transition: box-shadow 0.4s ease;
+  }
+  .contactbtn:hover{
+    box-shadow: 0px 4px 8px 0px rgba(246, 226, 7, 0.2), 0px -4px 8px 0px rgba(246, 226, 7, 0.4);
+    cursor: pointer;
+    border-color: #222222;
+  }
+  .textholder >h3{
+    margin: 0;
+    padding: 0;
+  }
+  .hero__right{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .socialIcons {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.socialIcons::before{
+    content:'';
+    position: absolute;
+    top:-8rem;
+    height: 7rem;
+    width: 0.20rem;
+    background-color:rgba(246, 226, 7, 0.3);
+    border-radius: 1rem;
+    box-shadow: 0px 1px 2px 0px rgba(246, 226, 7, 0.2), 0px -1px 2px 0px rgba(246, 226, 7, 0.4);
+    transition: box-shadow 0.4s ease;
+}
+.socialIcons::after{
+    content:'';
+    position: absolute;
+    bottom:-4rem;
+    height: 3rem;
+    width: 0.20rem;
+    background-color:rgba(246, 226, 7, 0.3);
+    border-radius: 1rem;
+    box-shadow: 0px 1px 2px 0px rgba(246, 226, 7, 0.2), 0px -1px 2px 0px rgba(246, 226, 7, 0.4);
+    transition: box-shadow 0.4s ease;
+}
+.socialIcons:hover::after, .socialIcons:hover::before{
+    box-shadow: 0px 4px 8px 0px rgba(246, 226, 7, 0.2), 0px -4px 8px 0px rgba(246, 226, 7, 0.4);
+    background-color: rgba(246, 226, 7, 0.9);
+
+}
+.icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all ease 0.3s;
+    color:rgba(246, 226, 7, 0.9);
+}
+.icon:hover {
+    box-shadow: 0 0 0.625em pink;
+    color: white;
+}

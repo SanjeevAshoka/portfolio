@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import { FaDownload } from "react-icons/fa";
 import resume from '../../assets/resume.png';
+import resumePdf from '../../assets/sanjeev_resume.pdf';
+
 import './Resume.css';
 
 const Resume = () => {
@@ -29,7 +31,7 @@ const Resume = () => {
     }, []);
     const handleDownload = () => {
         const link = document.createElement('a');
-        link.href = '../../assets/sanjeev_resume.pdf';
+        link.href = resumePdf;
         link.download = 'Sanjeev_Resume.pdf';
         document.body.appendChild(link);
         link.click();

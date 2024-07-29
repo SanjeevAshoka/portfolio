@@ -2,6 +2,7 @@ import { useState } from 'react';
 import ContactPopup from '../ContactPopup/ContactPopup';
 import {FaTwitter, FaLinkedin, FaGithub} from "react-icons/fa";
 import { handleSocialIcons } from '../../utils';
+import profile from "../../assets/profile.jpeg";
 import './hero.scss';
 
 const Hero = () => {
@@ -14,7 +15,7 @@ const Hero = () => {
           {contactModal && <ContactPopup  popupHandle={popupHandle} />}
           <div className='hero'>
               <div className="imageholder">
-                  <img src="./../../src/assets/profile.jpeg" alt="" />
+                  <img src={profile} alt="Profile Pic" />
               </div>
               <div className='hero__left'>
                   <div className="textholder">

@@ -38,6 +38,13 @@
     word-spacing: 0.25rem;
     gap: 2rem;
   }
+  @media (max-width: 580px) {
+    .hero__left{
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0.5rem 1rem;
+    border-radius: 0.8rem;
+    }
+  }
   .namespan{
     font-size: 1.5rem;
     color: rgb(246, 226, 7);

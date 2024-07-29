@@ -26,7 +26,6 @@
     margin-left: 4rem;
     padding: 1rem;
     border-radius: 1rem;
-    /* border: 1px solid white; */
 }
 .expSection p, h3{
     margin:0;
@@ -37,11 +36,9 @@
 .expRole{
     word-spacing: 0.4rem;
     position: relative;
-    /* border: 1px solid white; */
 }
 .yearWork{
     font-size: 0.7rem;
-    /* padding: 0.2rem; */
     padding-inline: 0.2rem;
     border: 1px solid rgba(0, 0, 0, 0.9);
     border-radius: 0.2rem;
@@ -68,7 +65,6 @@
     .yearWork {
         right: 0%;
     }
-
     .yearWork::before {
         content: '';
         position: absolute;
@@ -77,7 +73,6 @@
         right: 100%;
         background-color: rgba(246, 226, 7, 0.6);
         clip-path: polygon(0% 50%, 100% 0%, 100% 100%, 0% 50%);
-
     }
     .yearWork::after{
         display: none;
@@ -113,7 +108,11 @@
     background-color:rgba(246, 226, 7, 0.6);
     clip-path:  polygon(0% 50%, 100% 0%, 100% 100%, 0% 50%);
 }
-
+@media (max-width: 490px) {
+    .yearWork{
+        translate: 0 100%;
+     }
+}
 }
 .expSection:hover .yearWork{
     border: 1px solid rgba(246, 226, 7, 0.9);

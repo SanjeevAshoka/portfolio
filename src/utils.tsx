@@ -11,12 +11,14 @@ export const projectRepoIcons = (projectName: string)=>{
 }
 
 export const projectWebsiteLinks = (projectName: string)=>{
-    switch(projectName){
-        case 'responsive': window.open(`https://sanjeevashoka.github.io/Responsive_Landing_Page/`, '_blank'); break;
-        case 'movix': window.open(`https://moviex-nine-mocha.vercel.app/`, '_blank'); break;
-        case 'fitClub': window.open(`https://fitclubgym-6jk.pages.dev/`, '_blank'); break;
-        default : break;
-      }
+    window.open(projectName, '_blank');
+
+    // switch(projectName){
+    //     case 'responsive': window.open(`https://sanjeevashoka.github.io/Responsive_Landing_Page/`, '_blank'); break;
+    //     case 'movix': window.open(`https://moviex-nine-mocha.vercel.app/`, '_blank'); break;
+    //     case 'fitClub': window.open(`https://fitclubgym-6jk.pages.dev/`, '_blank'); break;
+    //     default : break;
+    //   }
 }
 export const companyLinkHandler = (companyName: string) => {
     switch (companyName) {

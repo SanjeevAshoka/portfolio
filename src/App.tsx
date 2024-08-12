@@ -7,7 +7,7 @@ import PortFolio from './components/Portfolio/PortFolio.tsx'
 import Experience from './components/Experience/Experience.tsx'
 import Contact from './components/Contact/Contact.tsx'
 import Resume from './components/Resume/Resume.tsx'
-import { AppProvider } from './Context.tsx'
+import { AppProvider } from './Context/Context.tsx'
 import { useEffect, useRef, useState } from 'react';
 
 function App() {
@@ -58,7 +58,7 @@ function App() {
       <div ref={portfolioRef}><PortFolio /></div>
       <div ref={experienceRef}><Experience /></div>
       <div ref={resumeRef}><Resume /></div>
-      <div ref={contactRef}><Contact /></div>
+      <div ref={contactRef}><Contact /></div> 
     </AppProvider>
   )
 }

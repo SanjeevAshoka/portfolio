@@ -4,12 +4,14 @@ import {FaTwitter, FaLinkedin, FaGithub} from "react-icons/fa";
 import { handleSocialIcons } from '../../utils';
 import profile from "../../assets/profile.jpeg";
 import './hero.scss';
+import { useAppContext } from '../../Context/Context';
 
 const Hero = () => {
     const[contactModal, setContactModal] = useState(false);
     const popupHandle = ()=>{
         setContactModal(!contactModal);
     }
+    const {heroSectionData} = useAppContext()?.data || {};
   return (
       <>
           {contactModal && <ContactPopup  popupHandle={popupHandle} />}
@@ -19,12 +21,12 @@ const Hero = () => {
               </div>
               <div className='hero__left'>
                   <div className="textholder">
-                      <h3>I'm <span className='namespan'>Sanjeev Ashoka</span></h3>
-                      <h3>FrontEnd Developer & React</h3>
-                      <h3 className='consult'>Consulantant</h3>
+                      <h3>{heroSectionData.heroIam} <span className='namespan'>{heroSectionData.heroName}</span></h3>
+                      <h3>{heroSectionData.techRole}</h3>
+                      <h3 className='consult'>{heroSectionData.ifConsultant ? heroSectionData.consultantText : ''}</h3>
                   </div>
                   <div className="btnholder">
-                      <button className='contactbtn' onClick={popupHandle}>Contact Me</button>
+                      <button className='contactbtn' onClick={popupHandle}>{heroSectionData.contactBtnText}</button>
                   </div>
               </div>
               <div className="hero__right">

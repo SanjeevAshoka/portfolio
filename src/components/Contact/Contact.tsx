@@ -4,12 +4,14 @@ import { FiPhone } from "react-icons/fi";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { handleSocialIcons } from '../../utils';
+import { useAppContext } from '../../Context/Context';
 
 const Contact = () => {
+    const {contactData}  = useAppContext()?.data || {};
   return (
       <>
           <div className='contact'>
-              <div className="contactHeader">Contact Me</div>
+              <div className="contactHeader">{contactData.contactSectionHeader}</div>
               <div className="contactCards">
                   <div className='iconsWithDesc'>
                       <span className='contactExpLocation'>
@@ -49,16 +51,18 @@ const Contact = () => {
               </div>
           </div>
           <div className="ongoingDev">
-            <div className='ongoingContainer'><span className='headerOngoing'>Still Ongoing Under Development</span></div>
+            <div className='ongoingContainer'><span className='headerOngoing'>{contactData.onGoing.ongoingSectionHeader}</span></div>
             <div className="ongoingFeatures">
-                <span className="featureName">Making it Fully Customisable(directly from UI)</span>
-                <span className="featureName">Support for both light and dark theme</span>
-                <span className="featureName">Adding Localisation(Multiple Language Support)</span>
+                {
+                    contactData?.onGoing?.ongoingfeatures && contactData?.onGoing?.ongoingfeatures.map((ongoingItem:string)=>(
+                        <span key={ongoingItem} className="featureName">{ongoingItem}</span>
+                    ))
+                }
             </div>
           </div>
           <div className="thanks">
               <div className="thanksMsg">
-                  Thank you for Scrolling !
+                  {contactData.thanksMessage}
               </div>
           </div>
       </>

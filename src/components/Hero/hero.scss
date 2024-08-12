@@ -14,8 +14,10 @@
   }
   .imageholder >img {
     filter: blur(1px);
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%; 
+    border-top-left-radius: 20px;
+    border-top-right-radius: 10px; 
+    border-bottom-right-radius: 30px; 
+    border-bottom-left-radius: 5px; 
     mix-blend-mode: darken;
   }
   @media (max-width: 850px) {
@@ -37,6 +39,7 @@
     text-align: left;
     word-spacing: 0.25rem;
     gap: 2rem;
+    transition: background-color 0.4s ease, padding 0.4s ease, border-radius 0.4s ease;
   }
   @media (max-width: 580px) {
     .hero__left{

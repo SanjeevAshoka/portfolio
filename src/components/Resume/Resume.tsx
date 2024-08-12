@@ -4,9 +4,11 @@ import resume from '../../assets/resume.png';
 import resumePdf from '../../assets/sanjeev_resume.pdf';
 
 import './Resume.css';
+import { useAppContext } from '../../Context/Context';
 
 const Resume = () => {
     const [shouldAnimate, setShouldAnimate] = useState(false)
+    const {resumeSectionData} = useAppContext()?.data || {};
     const observerRef = useRef(null);
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
@@ -40,14 +42,14 @@ const Resume = () => {
     return (
         <div className='resumeSection'>
             <div className='resumeText'>
-                <h3 className='resumeTextOne'>Have a Look at my</h3>
-                <p className={`resumeTextTwo ${shouldAnimate ? 'animate' : ''}`} ref={observerRef}>Awesome Resume</p>
+                <h3 className='resumeTextOne'>{resumeSectionData?.resumeHaveLookText}</h3>
+                <p className={`resumeTextTwo ${shouldAnimate ? 'animate' : ''}`} ref={observerRef}>{resumeSectionData?.resumetext}</p>
             </div>
             <div className="resumeImageHolder">
                 <img src={resume} alt="Resume_Image" className="resumeImage" />
                 <div className="downloadBtn">
                     <button className='browseButton'>
-                        <span className='btnText'>Download</span>
+                        <span className='btnText'>{resumeSectionData?.downloadBtnText}</span>
                         <span className="icon" onClick={handleDownload}>
                             <FaDownload /></span>
                     </button>

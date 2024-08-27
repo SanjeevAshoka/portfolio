@@ -14,7 +14,7 @@ export const FrenchData = {
             "thanksMessage": "Merci pour votre défilement !",
             "onGoing": {
                 "ongoingSectionHeader": "Encore en Développement",
-                "ongoingfeatures": ["Rendre entièrement personnalisable (directement depuis l'interface utilisateur)", "Support pour les thèmes clair et sombre", "Migration de ce site Web vers une application Web Progressive (PWA)"]
+                "ongoingfeatures": ["Rendre entièrement personnalisable (directement depuis l'interface utilisateur)", "Support pour les thèmes clair et sombre", "Migration de ce site Web vers une application Web Progressive (PWA): En cours"]
             }
         },
         "contactPopup": {
@@ -98,7 +98,7 @@ export const FrenchData = {
             "skillSectionHeader": "Mes Compétences"
         },
         "navSectionData":{
-            navOptions: ["À Propos", "Portfolio", "Contact", "Expérience"],
+            navOptions: ["À Propos", "Portfolio", "Expérience", "Contact"],
             languageOptions:[
                 {languageText: 'En', flag: '🇬🇧'},
                 {languageText: 'Fr', flag: '🇫🇷'},

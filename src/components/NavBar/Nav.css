@@ -92,7 +92,7 @@ svg{
     z-index: 2;
     position: absolute;
     left:50%;
-    translate: -70%;
+    translate: -65%;
     border:1px solid rgba(154, 154, 161, 0.2);
     box-shadow: 0px 6px 12px 0px rgba(154, 154, 161, 0.2), 0px -6px 12px 0px rgba(154, 154, 161, 0.4);
     padding: 0.5rem;
@@ -205,7 +205,7 @@ form {
   .connector {
       position: absolute;
       left: 42%;
-      top: 13.6%;
+      top: 12.8%;
       transform: translate(-50%, -50%);
       width: 30px;
       height: 30px;

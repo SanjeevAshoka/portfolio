@@ -13,7 +13,7 @@ export const MandarinChineseData = {
         "thanksMessage": "感谢您的浏览！",
         "onGoing": {
             "ongoingSectionHeader": "仍在开发中",
-            "ongoingfeatures": ["使其完全可定制（直接从用户界面）", "支持明暗主题", "将这个网站迁移到渐进式 Web 应用程序 (PWA)"]
+            "ongoingfeatures": ["使其完全可定制（直接从用户界面）", "支持明暗主题", "将这个网站迁移到渐进式 Web 应用程序 (PWA): 进行中"]
         }
     },
     "contactPopup": {
@@ -97,7 +97,7 @@ export const MandarinChineseData = {
         "skillSectionHeader": "我的技能 "
     },
     "navSectionData":{
-        navOptions: ["关于", "作品集", "联系", "经验"],
+        navOptions: ["关于", "作品集", "经验", "联系"],
         languageOptions:[
             {languageText: 'En', flag: '🇬🇧'},
             {languageText: 'Fr', flag: '🇫🇷'},

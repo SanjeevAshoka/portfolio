@@ -14,7 +14,7 @@ export const EnglishData = {
         thanksMessage: "Thank you for Scrolling !",
         onGoing: {
             ongoingSectionHeader: "Still Ongoing Under Development",
-            ongoingfeatures: ["Making it Fully Customisable(directly from UI)", "Support for both light and dark theme", "Migrating this website to a Progressive Web App (PWA)"],
+            ongoingfeatures: ["Making it Fully Customisable(directly from UI)", "Support for both light and dark theme", "Migrating this website to a Progressive Web App (PWA)- In Progress"],
         }
     },
     "contactPopup": {
@@ -98,7 +98,7 @@ export const EnglishData = {
         "skillSectionHeader": "My Skills"
     },
     "navSectionData":{
-        navOptions: ["About", "Portfolio", "Contact", "Experience"],
+        navOptions: ["About", "Portfolio", "Experience", "Contact"],
         languageOptions:[
             {languageText: 'En', flag: '🇬🇧'},
             {languageText: 'Fr', flag: '🇫🇷'},

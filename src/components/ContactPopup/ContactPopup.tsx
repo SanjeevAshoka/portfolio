@@ -71,8 +71,8 @@ const ContactPopup: React.FC<ContactPopupProps> = ({ popupHandle }) => {
                     {fieldsError.message?.length > 0 && <span className='errorSpan'>{fieldsError.message}</span>}
                 </div>
                 <div className="button-group">
-                    <button className="formBtn" onClick={handleSendEmail}>{contactPopup.sendBtnText}</button>
-                    <button type="button" className="formBtn" onClick={closePopup}>{contactPopup.cancelBtnText}</button>
+                    <button className="formBtn" onClick={handleSendEmail}>{contactPopup?.sendBtnText}</button>
+                    <button type="button" className="formBtn" onClick={closePopup}>{contactPopup?.cancelBtnText}</button>
                 </div>
             </form>) : sendStatus === 'ongoing' ?
                 (<div className="loaderwrap">

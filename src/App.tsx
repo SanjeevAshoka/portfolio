@@ -24,25 +24,26 @@ function App() {
   const contactRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     switch (currentSection) {
-      case 'hero':
+      case 'Hero':
         heroRef.current?.scrollIntoView({ behavior: 'smooth' });
         break;
-      case 'about':
+      case 'About': case '关于': case 'À Propos': case 'संबंधित': case 'O Mnie':
         aboutRef.current?.scrollIntoView({ behavior: 'smooth' });
         break;
-      case 'skills':
+      case 'Skills':
         skillsRef.current?.scrollIntoView({ behavior: 'smooth' });
         break;
-      case 'portfolio':
+      case 'Portfolio': case '作品集': case 'पोर्टफोलियो': case 'Teczka':
         portfolioRef.current?.scrollIntoView({ behavior: 'smooth' });
         break;
-      case 'experience':
+      case 'Experience': case '经验': case 'Expérience': case 'अनुभव':
         experienceRef.current?.scrollIntoView({ behavior: 'smooth' });
+        console.log("sss");
         break;
-      case 'resume':
+      case 'Resume':
         resumeRef.current?.scrollIntoView({ behavior: 'smooth' });
         break;
-      case 'contact':
+      case 'Contact': case '联系': case 'संपर्क': case 'Kontakt':
         contactRef.current?.scrollIntoView({ behavior: 'smooth' });
         break;
       default:

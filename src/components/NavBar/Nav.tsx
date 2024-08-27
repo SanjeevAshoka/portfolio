@@ -41,6 +41,11 @@ const Nav = ({ updateCurrentSection }: { currentSectionUserwants: string, update
     languageUpdate(selectedLanguage);
     setCurrLanguage(() => selectedLanguage);
   }
+  const clickFromPopup = (navOption: string) => {
+    setShowPopup(() => !showPopup);
+    updateCurrentSection(navOption);
+  }
+
   return (
     <>
       <div className="locale__section">
@@ -53,7 +58,7 @@ const Nav = ({ updateCurrentSection }: { currentSectionUserwants: string, update
         <ul className='nav__links'>
           {!showIcon ? <>{
             navOptions && navOptions.map((navOption: string, ind: number) => (
-              <li key={ind} className={ind === navOption.length - 1 ? 'nav__links_item itempopup' : 'nav__links_item'} onClick={() => updateCurrentSection(navOption.toLowerCase())}>{navOption}</li>
+              <li key={ind} className={ind === navOption.length - 1 ? 'nav__links_item itempopup' : 'nav__links_item'} onClick={() => updateCurrentSection(navOption)}>{navOption}</li>
             ))
           }</> :
             <div className='iconHolder'>
@@ -62,7 +67,7 @@ const Nav = ({ updateCurrentSection }: { currentSectionUserwants: string, update
                 <>
                   {
                     navOptions && navOptions.map((navOption: string, ind: number) => (
-                      <li key={ind} className={ind === navOption.length - 1 ? 'nav__links_item itempopup' : 'nav__links_item'} onClick={() => updateCurrentSection(navOption.toLowerCase())}>{navOption}</li>
+                      <li key={ind} className={ind === navOption.length - 1 ? 'nav__links_item itempopup' : 'nav__links_item'} onClick={() => clickFromPopup(navOption)}>{navOption}</li>
                     ))
                   }
                 </>

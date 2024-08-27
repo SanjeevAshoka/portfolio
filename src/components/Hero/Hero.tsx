@@ -21,12 +21,12 @@ const Hero = () => {
               </div>
               <div className='hero__left'>
                   <div className="textholder">
-                      <h3>{heroSectionData.heroIam} <span className='namespan'>{heroSectionData.heroName}</span></h3>
-                      <h3>{heroSectionData.techRole}</h3>
-                      <h3 className='consult'>{heroSectionData.ifConsultant ? heroSectionData.consultantText : ''}</h3>
+                      <h3>{heroSectionData?.heroIam} <span className='namespan'>{heroSectionData?.heroName}</span></h3>
+                      <h3>{heroSectionData?.techRole}</h3>
+                      <h3 className='consult'>{heroSectionData?.ifConsultant ? heroSectionData?.consultantText : ''}</h3>
                   </div>
                   <div className="btnholder">
-                      <button className='contactbtn' onClick={popupHandle}>{heroSectionData.contactBtnText}</button>
+                      <button className='contactbtn' onClick={popupHandle}>{heroSectionData?.contactBtnText}</button>
                   </div>
               </div>
               <div className="hero__right">

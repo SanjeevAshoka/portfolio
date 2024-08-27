@@ -13,7 +13,7 @@ export const PolishData = {
         "thanksMessage": "Dziękuję za przewijanie!",
         "onGoing": {
             "ongoingSectionHeader": "Wciąż w Trakcie Rozwoju",
-            "ongoingfeatures": ["Umożliwienie pełnej personalizacji (bezpośrednio z interfejsu użytkownika)", "Wsparcie dla motywów jasnych i ciemnych", "Migracja tej strony internetowej do aplikacji internetowej progresywnej (PWA)"]
+            "ongoingfeatures": ["Umożliwienie pełnej personalizacji (bezpośrednio z interfejsu użytkownika)", "Wsparcie dla motywów jasnych i ciemnych", "Migracja tej strony internetowej do aplikacji internetowej progresywnej (PWA): W trakcie"]
         }
     },
     "contactPopup": {
@@ -97,7 +97,7 @@ export const PolishData = {
         "skillSectionHeader": "Moje Umiejętności"
     },
     "navSectionData":{
-        navOptions: ["O Mnie", "Portfolio", "Kontakt", "Doświadczenie"],
+        navOptions: ["O Mnie", "Teczka", "Doświadczenie", "Kontakt"],
         languageOptions:[
             {languageText: 'En', flag: '🇬🇧'},
             {languageText: 'Fr', flag: '🇫🇷'},

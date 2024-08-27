@@ -11,7 +11,7 @@ const Contact = () => {
   return (
       <>
           <div className='contact'>
-              <div className="contactHeader">{contactData.contactSectionHeader}</div>
+              <div className="contactHeader">{contactData?.contactSectionHeader}</div>
               <div className="contactCards">
                   <div className='iconsWithDesc'>
                       <span className='contactExpLocation'>
@@ -51,7 +51,7 @@ const Contact = () => {
               </div>
           </div>
           <div className="ongoingDev">
-            <div className='ongoingContainer'><span className='headerOngoing'>{contactData.onGoing.ongoingSectionHeader}</span></div>
+            <div className='ongoingContainer'><span className='headerOngoing'>{contactData?.onGoing.ongoingSectionHeader}</span></div>
             <div className="ongoingFeatures">
                 {
                     contactData?.onGoing?.ongoingfeatures && contactData?.onGoing?.ongoingfeatures.map((ongoingItem:string)=>(
@@ -62,7 +62,7 @@ const Contact = () => {
           </div>
           <div className="thanks">
               <div className="thanksMsg">
-                  {contactData.thanksMessage}
+                  {contactData?.thanksMessage}
               </div>
           </div>
       </>

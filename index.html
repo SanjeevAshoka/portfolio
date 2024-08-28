@@ -17,12 +17,12 @@
         <script>
           if ('serviceWorker' in navigator) {
             window.addEventListener('load', function() {
-              navigator.serviceWorker.register('worker.js').then(function(registration) {
+              navigator.serviceWorker.register('./sw.js').then(function(registration) {
                 console.log('Worker registration successful', registration.scope);
               }, function(err) {
                 console.log('Worker registration failed', err);
               }).catch(function(err) {
-                console.log(err);
+                console.log("Err: ", err);
               });
             });
           } else {
@@ -31,4 +31,3 @@
         </script>
   </body>
 </html>
-/Users/5009159/Documents/Learn/Next/port/portfolio/src

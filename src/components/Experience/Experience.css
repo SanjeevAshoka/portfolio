@@ -48,8 +48,8 @@
     top: 50%;
     translate: 0 -50%;
     width: max-content;
-    transition: box-shadow 0.4s ease;
-            border: 1px solid rgba(246, 226, 7, 0.9);
+    transition: box-shadow 0.4s ease, right 0.5s ease;
+    border: 1px solid rgba(246, 226, 7, 0.9);
 }
 .yearWork::after{
     content: '';

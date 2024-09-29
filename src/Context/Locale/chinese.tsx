@@ -5,7 +5,7 @@ import fitClub from '../../assets/fitClub.png';
 export const MandarinChineseData = {
     "aboutData": {
         "aboutSectionHeader": "关于我",
-        "aboutDescText": "我是一名拥有 年经验的软件开发人员，专注于创建（偶尔开发）完美、引人入胜且出色的数字体验。目前，我专注于在 ",
+        "aboutDescText": "我是一名拥有 3+ 年经验的软件开发人员，专注于创建（偶尔开发）完美、引人入胜且出色的数字体验。目前，我专注于在 ",
         "companyName": "Lowe's India"
     },
     "contactData": {

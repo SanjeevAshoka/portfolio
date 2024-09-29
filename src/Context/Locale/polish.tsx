@@ -5,7 +5,7 @@ import fitClub from '../../assets/fitClub.png';
 export const PolishData = {
     "aboutData": {
         "aboutSectionHeader": "O Mnie",
-        "aboutDescText": "Jestem programistą z latami doświadczenia, specjalizującym się w tworzeniu (od czasu do czasu rozwijaniu) doskonałych, angażujących i wyjątkowych doświadczeń cyfrowych. Obecnie koncentruję się na tworzeniu dostępnych i skoncentrowanych na użytkowniku aplikacji internetowych w ",
+        "aboutDescText": "Jestem programistą z latami 3+ doświadczenia, specjalizującym się w tworzeniu (od czasu do czasu rozwijaniu) doskonałych, angażujących i wyjątkowych doświadczeń cyfrowych. Obecnie koncentruję się na tworzeniu dostępnych i skoncentrowanych na użytkowniku aplikacji internetowych w ",
         "companyName": "Lowe's India"
     },
     "contactData": {

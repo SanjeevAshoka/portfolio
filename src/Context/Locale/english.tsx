@@ -6,7 +6,7 @@ import fitClub from '../../assets/fitClub.png';
 export const EnglishData = {
     "aboutData": {
         aboutSectionHeader: "About",
-        aboutDescText:"I'm a Software Developer with years of experience, specializing in building (ocassionally developing) pixel-perfect, engaging and exceptional digital experiences. Currently, I'm focused on building accessible , human-centered web-applications at ",
+        aboutDescText:"I'm a Software Developer with 3+ years of experience, specializing in building (ocassionally developing) pixel-perfect, engaging and exceptional digital experiences. Currently, I'm focused on building accessible , human-centered web-applications at ",
         companyName: "Lowe's India"
     },
     "contactData": {

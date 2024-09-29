@@ -6,7 +6,7 @@ import fitClub from '../../assets/fitClub.png';
 export const FrenchData = {
         "aboutData": {
             "aboutSectionHeader": "À Propos",
-            "aboutDescText": "Je suis un développeur logiciel avec années d'expérience, spécialisé dans la création (occasionnellement le développement) d'expériences numériques impeccables, engageantes et exceptionnelles. Actuellement, je me concentre sur la création d'applications web accessibles et centrées sur l'humain chez ",
+            "aboutDescText": "Je suis un développeur logiciel avec 3+ années d'expérience, spécialisé dans la création (occasionnellement le développement) d'expériences numériques impeccables, engageantes et exceptionnelles. Actuellement, je me concentre sur la création d'applications web accessibles et centrées sur l'humain chez ",
             "companyName": "Lowe's India"
         },
         "contactData": {
